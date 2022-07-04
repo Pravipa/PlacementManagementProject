@@ -31,17 +31,12 @@ public class Job {
 	private long jobId;
 	
 	@ManyToOne(cascade = CascadeType.MERGE)
-	//@JsonIgnore
-    @JoinColumn(name = "recruiterId")
+	@JoinColumn(name = "recruiterId")
 	private Recruiter recruiter;
 	
 	@JoinColumn (name="jobApplicantId")
 	@ManyToOne (cascade = CascadeType.MERGE)
-	//@JsonIgnore
 	private JobApplicant jobApplicant;
-	
-	//NEED TO ADD DATA FIRST FOR JOBAPPLICANT
-	//THEN FOR JOB ADD JOBAPPLICANT
 	
 	private String company;
 	
