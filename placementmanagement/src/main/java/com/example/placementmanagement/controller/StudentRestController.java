@@ -53,19 +53,6 @@ public class StudentRestController {
 		return theStudent;
 	}
 	
-	/*@GetMapping("/studentByEmail/{studentEmail}")
-	public Student getByEmailId(@Valid @PathVariable String email) throws StudentEmailNotFoundException  {
-		
-		Student theStudent = studentService.findByEmail(email);
-		
-		if (theStudent == null) {
-			throw new StudentEmailNotFoundException("Student email not found - " + email);
-		}
-		
-		return theStudent;
-	}*/
-	
-	
 	
 	// add mapping for POST /Students - add new Student
 	
